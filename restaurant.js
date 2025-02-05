@@ -3,8 +3,12 @@
 const prompt = require("prompt-sync")();
 const age = prompt("enter your age: ");
 
+const food = 500;
+
 if (age >= 50 ){
-    console.log("get 50% discount")
+    const discount = food * 50 / 100;
+    const total = food - discount
+    console.log("get 50% discount amount of pay ", total)
 }
 
 else if(age > 12 && age < 50 ){
